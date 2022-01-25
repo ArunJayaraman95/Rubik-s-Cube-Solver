@@ -29,6 +29,16 @@ def R():
     down[2], down[5], down[8] = back[2], back[5], back[8]
     back[2], back[5], back[8] = up[2], up[5], up[8]
     up[2], up[5], up[8] = t1, t2, t3
+    t = right[0]
+    right[0] = right[3]
+    right[3] = right[6]
+    right[6] = right[7]
+    right[7] = right[8]
+    right[8] = right[5]
+    right[5] = right[2]
+    right[2] = right[1]
+    right[1] = t
+
 
 def L():
     t1, t2, t3 = front[0], front[3], front[6]
@@ -36,12 +46,24 @@ def L():
     up[0], up[3], up[6] = back[0], back[3], back[6]
     back[0], back[3], back[6] = down[0], down[3], down[6]
     down[0], down[3], down[6] = t1, t2, t3
+    t = right[0]
+    right[0] = right[3]
+    right[3] = right[6]
+    right[6] = right[7]
+    right[7] = right[8]
+    right[8] = right[5]
+    right[5] = right[2]
+    right[2] = right[1]
+    right[1] = t
+
 
 display()
 start = timer()
 R()
 end = timer()
 print(end-start)
+display()
+L()
 display()
 
 # Solve White Corners
