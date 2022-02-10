@@ -141,18 +141,16 @@ def B():
     back[5] = t
 
 # Inverse functions
-# TODO: Direct assignment instead of 3x repetitions
+# TODO : Direct assignment instead of 3x repetitions
 def Fi():
     F()
     F()
     F()
 
-
 def Bi():
     B()
     B()
     B()
-
 
 def Ri():
     R()
