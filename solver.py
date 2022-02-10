@@ -11,12 +11,12 @@ r, w, b, o, y, g = "R", "W", "B", "O", "Y", "G"
 def cta(s):
     return [i for i in s]
 # Define cube faces
-front = cta("BBYBBYRRY")
-up =    cta("WWBWWBWWR")
-back =  cta("OOWGGWGGW")
-left =  cta("GRRGRRGRR")
-right = cta("OOOOOOBBB")
-down =  cta("YYOYYGYYG")
+front = cta("BBBBBBBBB")
+up =    cta("WWWWWWWWW")
+back =  cta("GGGGGGGGG")
+left =  cta("RRRRRRRRR")
+right = cta("RRRRRRRRR")
+down =  cta("OOOOOOOOO")
 
 def display():
     print(f"\n       {back[0]} {back[1]} {back[2]}\n       {back[3]} {back[4]} {back[5]}\n       {back[6]} {back[7]} {back[8]}\n")
@@ -140,6 +140,39 @@ def B():
     back[7] = back[5]
     back[5] = t
 
+# Inverse functions
+# TODO: Direct assignment instead of 3x repetitions
+def Fi():
+    F()
+    F()
+    F()
+
+
+def Bi():
+    B()
+    B()
+    B()
+
+
+def Ri():
+    R()
+    R()
+    R()
+
+def Li():
+    L()
+    L()
+    L()
+
+def Di():
+    D()
+    D()
+    D()
+
+def Ui():
+    U()
+    U()
+    U()
 
 
 display()
@@ -150,13 +183,14 @@ display()
 # U()
 # L()
 # R()
-R()
-R()
-R()
-display()
-D()
-D()
-D()
+# R()
+# R()
+# R()
+# display()
+# D()
+# D()
+# D()
+
 
 display()
 
